@@ -1077,16 +1077,16 @@ Wire Wire Line
 Wire Wire Line
 	3050 7850 3000 7850
 Wire Wire Line
-	3000 7850 3000 8450
+	3000 7850 3000 8400
 $Comp
 L power:GND #PWR0117
 U 1 1 62F524BB
-P 3000 8500
-F 0 "#PWR0117" H 3000 8250 50  0001 C CNN
-F 1 "GND" H 3005 8327 50  0000 C CNN
-F 2 "" H 3000 8500 50  0001 C CNN
-F 3 "" H 3000 8500 50  0001 C CNN
-	1    3000 8500
+P 3000 8450
+F 0 "#PWR0117" H 3000 8200 50  0001 C CNN
+F 1 "GND" H 3005 8277 50  0000 C CNN
+F 2 "" H 3000 8450 50  0001 C CNN
+F 3 "" H 3000 8450 50  0001 C CNN
+	1    3000 8450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1101,14 +1101,14 @@ F 3 "" H 3000 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 8450 4800 8450
+	3000 8400 4800 8400
 Wire Wire Line
-	4800 8450 4800 8250
+	4800 8400 4800 8250
 Wire Wire Line
 	4800 8250 4750 8250
-Connection ~ 3000 8450
+Connection ~ 3000 8400
 Wire Wire Line
-	3000 8450 3000 8500
+	3000 8400 3000 8450
 $Comp
 L power:GND #PWR0119
 U 1 1 60E316CD
@@ -1932,8 +1932,6 @@ Wire Wire Line
 	3050 7350 2300 7350
 Wire Wire Line
 	3050 7750 1900 7750
-Wire Wire Line
-	3050 8050 2600 8050
 $Comp
 L Device:R R?
 U 1 1 6408C158
@@ -2706,27 +2704,6 @@ Wire Wire Line
 	2300 7350 1900 7350
 Text Notes 3150 6850 0    50   ~ 0
 TODO: choke?
-Wire Wire Line
-	1900 7450 2750 7450
-Wire Wire Line
-	1900 7550 2400 7550
-Wire Wire Line
-	1900 7950 2500 7950
-Wire Wire Line
-	2400 7300 2400 7550
-Connection ~ 2400 7550
-Wire Wire Line
-	2400 7550 3050 7550
-Wire Wire Line
-	2500 7300 2500 7950
-Connection ~ 2500 7950
-Wire Wire Line
-	2500 7950 3050 7950
-Wire Wire Line
-	2600 7300 2600 8050
-Connection ~ 2600 8050
-Wire Wire Line
-	2600 8050 1900 8050
 $Comp
 L Device:R R?
 U 1 1 6160495C
@@ -2743,28 +2720,6 @@ Wire Wire Line
 Connection ~ 2750 6850
 Wire Wire Line
 	2750 6850 2600 6850
-Wire Wire Line
-	2750 7250 2750 7450
-Connection ~ 2750 7450
-Wire Wire Line
-	2750 7450 3050 7450
-$Comp
-L Device:R R?
-U 1 1 6172AA2F
-P 2750 8250
-F 0 "R?" H 2820 8296 50  0000 L CNN
-F 1 "DNF" H 2820 8205 50  0000 L CNN
-F 2 "" V 2680 8250 50  0001 C CNN
-F 3 "~" H 2750 8250 50  0001 C CNN
-	1    2750 8250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2750 8100 2750 7450
-Wire Wire Line
-	3000 8450 2750 8450
-Wire Wire Line
-	2750 8450 2750 8400
 $Comp
 L power:+3V3 #PWR?
 U 1 1 618BC279
@@ -2855,7 +2810,7 @@ F 3 "" H 11800 10500 50  0001 C CNN
 	1    11800 10500
 	1    0    0    -1  
 $EndComp
-Text Notes 11350 10000 0    50   ~ 0
+Text Notes 10850 9750 0    50   ~ 0
 Disable ESP by default
 Text Notes 13700 12200 0    50   ~ 0
 TODO: 32K XTAL
@@ -2867,4 +2822,59 @@ Text Label 13450 10100 0    50   ~ 0
 ESP_BOOT
 Text Notes 13000 12750 0    50   ~ 0
 TODO: consider resistors between SOC and ESP?
+Wire Wire Line
+	2400 7300 2400 7450
+Wire Wire Line
+	1900 7450 2400 7450
+Wire Wire Line
+	2400 7450 3050 7450
+Connection ~ 2400 7450
+Wire Wire Line
+	2500 7300 2500 7550
+Wire Wire Line
+	1900 7550 2500 7550
+Wire Wire Line
+	2500 7550 3050 7550
+Connection ~ 2500 7550
+Wire Wire Line
+	2600 7300 2600 7950
+Wire Wire Line
+	1900 7950 2600 7950
+Wire Wire Line
+	2600 7950 3050 7950
+Connection ~ 2600 7950
+Wire Wire Line
+	2750 7250 2750 8050
+Wire Wire Line
+	1900 8050 2750 8050
+Wire Wire Line
+	2750 8050 3050 8050
+Connection ~ 2750 8050
+Wire Wire Line
+	11800 10100 11800 10050
+Connection ~ 11800 10100
+$Comp
+L Device:R R?
+U 1 1 629902D6
+P 11800 9900
+F 0 "R?" H 11600 9950 50  0000 L CNN
+F 1 "DNF" H 11600 9850 50  0000 L CNN
+F 2 "" V 11730 9900 50  0001 C CNN
+F 3 "~" H 11800 9900 50  0001 C CNN
+	1    11800 9900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6299093D
+P 11800 9700
+F 0 "#PWR?" H 11800 9550 50  0001 C CNN
+F 1 "+3V3" H 11815 9873 50  0000 C CNN
+F 2 "" H 11800 9700 50  0001 C CNN
+F 3 "" H 11800 9700 50  0001 C CNN
+	1    11800 9700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11800 9700 11800 9750
 $EndSCHEMATC
