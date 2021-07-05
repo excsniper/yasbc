@@ -6,4 +6,8 @@ K quartz ceramic resonator oscillator
 F ~
 $ENDCMP
 #
+$CMP VDDR
+K power-flag
+$ENDCMP
+#
 #End Doc Library
