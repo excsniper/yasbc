@@ -6,6 +6,12 @@ K quartz ceramic resonator oscillator
 F ~
 $ENDCMP
 #
+$CMP SW_5WAY
+D 5-way Tactile Switch
+K switch sp3t ON-ON-ON
+F ~
+$ENDCMP
+#
 $CMP VDDR
 K power-flag
 $ENDCMP
