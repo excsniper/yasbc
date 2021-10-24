@@ -2058,10 +2058,10 @@ IO32
 Text Label 3200 15250 0    50   ~ 0
 IO33
 Wire Wire Line
-	7150 12350 7150 12400
-Connection ~ 7150 12350
+	7150 12300 7150 12400
+Connection ~ 7150 12300
 Wire Wire Line
-	7150 12350 8950 12350
+	7150 12300 8950 12300
 $Comp
 L power:GND #PWR0117
 U 1 1 62F524BB
@@ -2074,20 +2074,9 @@ F 3 "" H 7150 12400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7150 11700 7150 12350
-$Comp
-L Connector:Micro_SD_Card_Det J5
-U 1 1 61E6C196
-P 8100 11600
-F 0 "J5" H 8050 12417 50  0000 C CNN
-F 1 "Micro_SD_Card_Det" H 8050 12326 50  0000 C CNN
-F 2 "" H 10150 12300 50  0001 C CNN
-F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1" H 8100 11700 50  0001 C CNN
-	1    8100 11600
-	1    0    0    -1  
-$EndComp
+	7150 11700 7150 12300
 Wire Wire Line
-	8950 12100 8950 12350
+	8950 12100 8950 12300
 Wire Wire Line
 	8950 12100 8900 12100
 Wire Wire Line
@@ -5615,8 +5604,6 @@ Wire Wire Line
 	17350 4600 16900 4600
 Wire Wire Line
 	17350 4700 16900 4700
-NoConn ~ 7200 12000
-NoConn ~ 7200 12100
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 613FCB8B
@@ -6703,6 +6690,17 @@ F 1 "GND" H 22000 4500 50  0000 C CNN
 F 2 "" H 22000 4650 50  0001 C CNN
 F 3 "" H 22000 4650 50  0001 C CNN
 	1    22000 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Micro_SD_Card J5
+U 1 1 61E7386F
+P 8100 11500
+F 0 "J5" H 8050 12217 50  0000 C CNN
+F 1 "Micro_SD_Card" H 8050 12126 50  0000 C CNN
+F 2 "yasbc:microSD" H 9250 11800 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 8100 11500 50  0001 C CNN
+	1    8100 11500
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
