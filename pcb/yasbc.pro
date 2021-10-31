@@ -1,4 +1,4 @@
-update=2021/10/23 10:39:12 PM
+update=2021/10/30 10:32:17 PM
 version=1
 last_client=kicad
 [general]
@@ -31,8 +31,28 @@ MinHoleToHole=0.5
 TrackWidth1=0.2032
 TrackWidth2=0.1524
 TrackWidth3=0.2032
+TrackWidth4=0.2286
+TrackWidth5=0.254
+TrackWidth6=0.3048
+TrackWidth7=0.3556
+TrackWidth8=0.4064
+TrackWidth9=0.4572
+TrackWidth10=0.508
+TrackWidth11=0.5588
+TrackWidth12=0.6096
+TrackWidth13=0.6604
 ViaDiameter1=0.4064
 ViaDrill1=0.2032
+ViaDiameter2=0.4064
+ViaDrill2=0.2032
+ViaDiameter3=0.4572
+ViaDrill3=0.254
+ViaDiameter4=0.508
+ViaDrill4=0.3048
+ViaDiameter5=0.5588
+ViaDrill5=0.3556
+ViaDiameter6=0.6096
+ViaDrill6=0.4064
 dPairWidth1=0.2032
 dPairGap1=0.1524
 dPairViaGap1=0.25
@@ -65,11 +85,11 @@ Name=F.Cu
 Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
-Name=In1.Cu
+Name=GND.Cu
 Type=1
 Enabled=1
 [pcbnew/Layer.In2.Cu]
-Name=In2.Cu
+Name=PWR.Cu
 Type=1
 Enabled=1
 [pcbnew/Layer.In3.Cu]
