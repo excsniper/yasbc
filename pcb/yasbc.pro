@@ -1,4 +1,4 @@
-update=2021/11/21 6:58:18 PM
+update=2021/12/13 8:16:30 AM
 version=1
 last_client=kicad
 [general]
@@ -274,13 +274,13 @@ dPairWidth=0.2032
 dPairGap=0.1016
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
-Name=HighSpeed
-Clearance=0.1016
-TrackWidth=0.2032
+Name=DDR3
+Clearance=0.3048
+TrackWidth=0.1016
 ViaDiameter=0.4572
 ViaDrill=0.2032
 uViaDiameter=0.3
 uViaDrill=0.1
-dPairWidth=0.2032
+dPairWidth=0.1016
 dPairGap=0.1016
 dPairViaGap=0.25
