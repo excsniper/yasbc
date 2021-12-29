@@ -56,6 +56,10 @@
         }
       ],
       "drc_exclusions": [
+        "clearance|62606748|-40777746|037d141f-ea77-4130-b623-17796fc2eaf4|f18de4d1-4dea-4427-addd-50bae856e118",
+        "clearance|68549541|-34275459|05e278f0-c685-4034-9e39-cbea9266c28f|fe62fe2b-e07d-4fdb-bc5d-6399d4b409ec",
+        "clearance|71525000|-36950000|66ce95f0-3f2a-453a-9389-645ce175dca3|57680f21-5910-4ceb-ba19-7ebf8fb81092",
+        "clearance|71525000|-36950000|d4f40e89-212f-4d5c-b0f6-7a25d5d001cb|57680f21-5910-4ceb-ba19-7ebf8fb81092",
         "diff_pair_gap_out_of_range|64184238|-40792208|d6292f51-e772-408a-88fd-30f7fb7ecaed|25cc174c-41d0-4a32-af94-d7d98a2cac11"
       ],
       "meta": {
@@ -109,7 +113,7 @@
         "allow_microvias": false,
         "max_error": 0.005,
         "min_clearance": 0.1016,
-        "min_copper_edge_clearance": 0.19999999999999998,
+        "min_copper_edge_clearance": 0.2032,
         "min_hole_clearance": 0.2286,
         "min_hole_to_hole": 0.254,
         "min_microvia_diameter": 0.19999999999999998,
@@ -117,13 +121,13 @@
         "min_silk_clearance": 0.0,
         "min_through_hole_diameter": 0.19999999999999998,
         "min_track_width": 0.1016,
-        "min_via_annular_width": 0.09999999999999999,
-        "min_via_diameter": 0.44999999999999996,
+        "min_via_annular_width": 0.1016,
+        "min_via_diameter": 0.4572,
         "use_height_for_length_calcs": true
       },
       "track_widths": [
         0.0,
-        0.0,
+        0.0889,
         0.1016,
         0.1524,
         0.2032,
@@ -145,16 +149,12 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.45,
-          "drill": 0.2
+          "diameter": 0.4572,
+          "drill": 0.2032
         },
         {
-          "diameter": 0.5,
-          "drill": 0.25
-        },
-        {
-          "diameter": 0.55,
-          "drill": 0.3
+          "diameter": 0.508,
+          "drill": 0.254
         }
       ],
       "zones_allow_external_fillets": false,
@@ -400,7 +400,7 @@
       },
       {
         "bus_width": 12.0,
-        "clearance": 0.29845,
+        "clearance": 0.1016,
         "diff_pair_gap": 0.1016,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.1016,
@@ -467,7 +467,30 @@
       },
       {
         "bus_width": 12.0,
-        "clearance": 0.3556,
+        "clearance": 0.1016,
+        "diff_pair_gap": 0.1016,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2032,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "PWR",
+        "nets": [
+          "+1V2",
+          "+1V5",
+          "+3V3",
+          "GND"
+        ],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2032,
+        "via_diameter": 0.4572,
+        "via_drill": 0.2032,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
+        "clearance": 0.1016,
         "diff_pair_gap": 0.1016,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.117348,
