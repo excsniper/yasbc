@@ -9,7 +9,7 @@
     "opacity": {
       "pads": 0.5,
       "tracks": 0.8899999856948853,
-      "vias": 0.41999998688697815,
+      "vias": 0.5299999713897705,
       "zones": 0.5600000023841858
     },
     "ratsnest_display_mode": 0,
@@ -18,7 +18,7 @@
       "footprints": true,
       "graphics": true,
       "keepouts": true,
-      "lockedItems": false,
+      "lockedItems": true,
       "otherItems": true,
       "pads": true,
       "text": true,
@@ -61,8 +61,8 @@
       35,
       36
     ],
-    "visible_layers": "0001100_ffffffff",
-    "zone_display_mode": 1
+    "visible_layers": "000d000_fffffffd",
+    "zone_display_mode": 0
   },
   "meta": {
     "filename": "yasbc.kicad_prl",

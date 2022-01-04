@@ -1,0 +1,5 @@
+(version 1)
+
+(rule HIGH_SPEED_CLEARANCE
+    (constraint clearance (min 11.75mil))
+	(condition "!AB.isCoupledDiffPair() && A.NetClass == B.NetClass && A.Type == B.Type && A.NetClass =='DDR3' && A.Type =='Track'"))
