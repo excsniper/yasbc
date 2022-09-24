@@ -1,16 +1,16 @@
 {
   "board": {
-    "active_layer": 31,
+    "active_layer": 1,
     "active_layer_preset": "",
-    "auto_track_width": true,
+    "auto_track_width": false,
     "hidden_nets": [],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
-      "pads": 0.5,
-      "tracks": 0.8899999856948853,
-      "vias": 0.5299999713897705,
-      "zones": 0.5600000023841858
+      "pads": 0.6200000047683716,
+      "tracks": 0.8700000047683716,
+      "vias": 0.7799999713897705,
+      "zones": 0.4399999976158142
     },
     "ratsnest_display_mode": 0,
     "selection_filter": {
@@ -36,6 +36,7 @@
       8,
       9,
       10,
+      11,
       12,
       13,
       14,
@@ -61,8 +62,8 @@
       35,
       36
     ],
-    "visible_layers": "000d000_7ffffffc",
-    "zone_display_mode": 0
+    "visible_layers": "000d3cf_ffffffff",
+    "zone_display_mode": 1
   },
   "meta": {
     "filename": "yasbc.kicad_prl",
