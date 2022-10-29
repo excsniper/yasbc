@@ -55,13 +55,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "clearance|62606748|-40777746|037d141f-ea77-4130-b623-17796fc2eaf4|f18de4d1-4dea-4427-addd-50bae856e118",
-        "clearance|68549541|-34275459|05e278f0-c685-4034-9e39-cbea9266c28f|fe62fe2b-e07d-4fdb-bc5d-6399d4b409ec",
-        "clearance|71525000|-36950000|66ce95f0-3f2a-453a-9389-645ce175dca3|57680f21-5910-4ceb-ba19-7ebf8fb81092",
-        "clearance|71525000|-36950000|d4f40e89-212f-4d5c-b0f6-7a25d5d001cb|57680f21-5910-4ceb-ba19-7ebf8fb81092",
-        "diff_pair_gap_out_of_range|64184238|-40792208|d6292f51-e772-408a-88fd-30f7fb7ecaed|25cc174c-41d0-4a32-af94-d7d98a2cac11"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -122,26 +116,23 @@
         "min_through_hole_diameter": 0.19999999999999998,
         "min_track_width": 0.1016,
         "min_via_annular_width": 0.1016,
-        "min_via_diameter": 0.4572,
+        "min_via_diameter": 0.44999999999999996,
         "use_height_for_length_calcs": true
       },
       "track_widths": [
         0.0,
-        0.0889,
-        0.1016,
-        0.1524,
-        0.2032,
-        0.2286,
-        0.254,
-        0.3048,
-        0.3556,
-        0.4064,
-        0.4572,
-        0.508,
-        0.5588,
-        0.6096,
-        0.6604,
-        0.762
+        0.127,
+        0.15,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.7,
+        0.8,
+        1.0,
+        1.5,
+        2.0,
+        3.0
       ],
       "via_dimensions": [
         {
@@ -149,16 +140,16 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.4572,
-          "drill": 0.2032
+          "diameter": 0.45,
+          "drill": 0.2
         },
         {
-          "diameter": 0.508,
-          "drill": 0.254
+          "diameter": 0.6,
+          "drill": 0.3
         },
         {
-          "diameter": 0.6604,
-          "drill": 0.4064
+          "diameter": 0.8,
+          "drill": 0.4
         }
       ],
       "zones_allow_external_fillets": false,
@@ -564,7 +555,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "./",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,
